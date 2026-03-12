@@ -1,0 +1,27 @@
+&lt;!doctype html&gt; &lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="utf-8"&gt;&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt; &lt;title&gt;DragonStone — Admin&lt;/title&gt; &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+rel="stylesheet"&gt; &lt;link rel="stylesheet" href="admin_style.css"&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="d-flex"&gt; &lt;nav class="sidebar bg-dark text-white p-3"&gt;
+<h4>Admin</h4>
+&lt;ul class="nav flex-column"&gt; &lt;li class="nav-item"&gt;&lt;a class="nav-link text-white" href="#" onclick="show('dashboard')"&gt;Dashboard
+<li>&lt;a class="nav-link text-white" href="#" onclick="show('products')"&gt;Products</li>
+<li>&lt;a class="nav-link text-white" href="#" onclick="show('orders')"&gt;Orders</li>
+<li>&lt;a class="nav-link text-white" href="#" onclick="show('users')"&gt;Users</li>
+<li>&lt;a class="nav-link text-white" href="#" onclick="show('reports')"&gt;Reports</li>
+
+&lt;/nav&gt; &lt;main class="flex-grow-1 p-4"&gt; &lt;div id="dashboard" class="admin-pane"&gt;
+<h2>Dashboard</h2>
+<p>Quick stats: &lt;span id="stat-products"&gt;0 products, &lt;span id="stat-orders"&gt;0 orders.</p>
+
+&lt;div id="products" class="admin-pane d-none"&gt;
+<h2>Products &lt;button class="btn btn-sm btn-primary" onclick="newProduct()"&gt;Add product&lt;/button&gt;</h2>
+&lt;table class="table" id="productTable"&gt;IDTitlePriceActions &lt;div id="orders" class="admin-pane d-none"&gt;
+<h2>Orders</h2>
+<p>Order list will appear here.</p>
+
+&lt;div id="users" class="admin-pane d-none"&gt;
+<h2>Users</h2>
+<p>User management here.</p>
+
+&lt;div id="reports" class="admin-pane d-none"&gt;
+<h2>Reports</h2>
+<p>Generate sales / carbon / user reports by date range.</p>
+&lt;button class="btn btn-outline-secondary"&gt;Generate sample sales report&lt;/button&gt; &lt;/main&gt; &lt;script src="admin_script.js"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt;
