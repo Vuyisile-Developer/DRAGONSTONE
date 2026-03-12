@@ -26,5 +26,6 @@ This project includes both customer-facing and admin portals, built with modern 
 - Frontend: HTML5, CSS3, Bootstrap 5, JavaScript
 - Backend: PHP with PDO for secure database interactions
 - Database: MySQL
-- Hosting: 
+- Hosting: Infinityfree 
+- Website Link: http://vuyisile-palesa.fwh.is/
 - Version Control: Git and GitHub
